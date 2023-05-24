@@ -1,0 +1,19 @@
+<script language="javascript">
+        var num=prompt ("Enter a Number");
+        document.write("<table border=1");
+        temp=num;
+        for(x=1;x<num;x++)
+        {  
+          document.write("<tr>");
+           for(y=1;y<=num;y++)
+           {
+             if(x==y)color="blue";
+             if(y==temp)color="pink";
+             document.write("<td bgcolor="+color+">"+(x*y)+"</td>");
+             color="white"
+           } 
+           temp--;
+           document.write("</tr>");
+        }
+        document.write("</table>");
+</script>
